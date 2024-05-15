@@ -1,9 +1,4 @@
 :root {
-
-  /**
-   * COLORS
-   */
-
   /** Background colors */
   --bg-wild-blue-yonder: hsla(216, 33%, 68%, 1);
   --bg-carolina-blue: hsla(199, 89%, 49%, 1);
@@ -171,22 +166,18 @@ body.nav-active { overflow: hidden; }
 
 /* Reused style */
 
-.container {
-  padding-inline: 16px;
-}
+.container { padding-inline: 16px; }
 
 .hover-1,
-.hover-2 {
-  transition: var(--transition-1);
-}
+.hover-2 { transition: var(--transition-1); }
 
-.hover-1:is(:hover :focus-visible) {
+.hover-1:is(:hover, :focus-visible) { 
   color: var(--text-wild-blue-yonder);
-  transform: translate(3px);
+  transform: translateX(3px);
 }
 
-.hover-2:is(:hover :focus-visible) {
-  color: var(--text-carolina-blue);
+.hover-2:is(:hover, :focus-visible) { 
+  color: var(--text-carolina-blue); 
 }
 
 .profile-card {
@@ -198,6 +189,9 @@ body.nav-active { overflow: hidden; }
 .profile-card .profile-banner {
   border-radius: var(--radius-circle);
 }
+
+
+/* Header */
 
 .header .btn { display: none; }
 
@@ -305,7 +299,3 @@ body.nav-active { overflow: hidden; }
   color: var(--text-alice-blue);
   font-size: var(--fontSize-8);
 }
-
-
-
-
