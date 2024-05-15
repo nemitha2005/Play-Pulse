@@ -70,7 +70,7 @@
   --transition-2: 0.5s ease;
   --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
   --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
-
+}
   /* ------------Reset----------- */
   *,
   *::before,
@@ -151,4 +151,49 @@
     border-radius: var(--radius-pill);
   }
 
-}
+  /* Reused style */
+
+  .container{
+    padding-inline: 16px;
+  }
+
+  .hover-1,
+  .hover-2{
+    transition: var(--transition-1);
+  }
+
+  .hover-1:is(:hover :focus-visible){
+    color: var(--text-wild-blue-yonder);
+    transform: translate(3px);
+  }
+
+  .hover-2:is(:hover :focus-visible){
+    color: var(--text-carolina-blue);
+  }
+
+  .profile-card{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .profile-banner{
+    border-radius: var(--radius-circle);
+  }
+
+  .navbar,
+  .header .btn{
+    display: none;
+  }
+
+  .header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-block: 24px;
+    background-color: var(--bg-oxford-blue);
+    z-index: 4;
+  }
+
+
