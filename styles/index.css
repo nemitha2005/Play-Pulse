@@ -126,7 +126,6 @@ body.nav-active { overflow: hidden; }
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  background-color: var(--bg-oxford-blue);
   padding: 20px;
 }
 
@@ -209,4 +208,3 @@ body.nav-active { overflow: hidden; }
   color: var(--text-alice-blue);
   font-size: var(--fontSize-8);
 }
-
